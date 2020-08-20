@@ -15,7 +15,7 @@ class MPVUnitTestingTests: XCTestCase {
 
     override func setUp() {
         presenter = ViewControllerPresenter(self)
-    }
+    
 
     func testMultiplication() {
         let value = presenter.multiply(lhs: 5, rhs: 5)
@@ -28,6 +28,8 @@ class MPVUnitTestingTests: XCTestCase {
     
     func testfetchFalse() {
         presenter.fetchSomething(false)
+    }
+    
     }
     
 }

@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         presenter = ViewControllerPresenter(self)
-        
     }
     
     required init?(coder: NSCoder) {
@@ -26,6 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let config = UIApplication.fetchEnvironmentConfiguration()
         
+        let apikey = Bundle.main.infoDictionary?["API_KEY"] as! String
+        print(apikey)
     }
     
     
